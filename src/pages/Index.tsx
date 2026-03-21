@@ -120,7 +120,7 @@ export default function Index() {
         <div className="book-stage">
           <div className="book-3d">
             <div className="book-spine" />
-            <img src="/placeholder.svg" alt="Capa do Ebook 81 Formas" style={{ width: "100%", height: "100%", objectFit: "cover" }} />
+            <img src="/img/ebook-capa.png" alt="Capa do Ebook 81 Formas" style={{ width: "100%", height: "100%", objectFit: "cover" }} />
             <div className="book-gloss" />
           </div>
           <div className="book-glow" />
