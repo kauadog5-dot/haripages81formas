@@ -346,8 +346,8 @@ footer { background: var(--bg2); border-top: 1px solid var(--line); padding: 32p
   .wrap,.wrap-sm{padding:0 24px;}
   .hero{flex-direction:column;padding:80px 24px 64px;min-height:auto;gap:48px;}
   .hero-content{order:2;}
-  .book-stage{order:1;width:180px;}
-  .book-3d{width:170px;height:240px;}
+  .book-stage{order:1;width:200px;}
+  .book-3d{width:190px;height:270px;}
   .dor-grid,.promise-cols,.offer-layout,.obj-layout{grid-template-columns:1fr;gap:48px;}
   .ben-grid{grid-template-columns:repeat(2,1fr);}
   .prints-grid{grid-template-columns:repeat(2,1fr);}
