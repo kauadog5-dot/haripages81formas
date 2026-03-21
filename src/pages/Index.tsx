@@ -128,7 +128,7 @@ export default function Index() {
             Você acorda todo dia no mesmo ciclo: trabalha, paga conta, repete. <strong>81 métodos reais e testados</strong> para gerar renda na internet — para quem está cansado de chegar no fim do mês no vermelho.
           </p>
           <div className="hero-btns">
-            <a href="#oferta" className="btn btn-primary" onClick={addRipple}>Quero começar agora</a>
+            <a href="https://go.tribopay.com.br/w07cffe1vx" className="btn btn-primary" onClick={addRipple}>Quero começar agora</a>
             <a href="#conteudo" className="btn btn-ghost" onClick={addRipple}>Ver o conteúdo</a>
           </div>
           <div className="hero-perks">
