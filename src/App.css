@@ -18,7 +18,7 @@
 /* ─── BUTTONS ─── */
 .btn {
   display: inline-flex; align-items: center; justify-content: center; gap: 8px;
-  font-family: 'Sora', sans-serif; font-weight: 800; font-size: 13px;
+  font-family: 'Inter', sans-serif; font-weight: 800; font-size: 13px;
   letter-spacing: .04em; border: none; cursor: pointer;
   border-radius: 100px; padding: 14px 30px;
   position: relative; overflow: hidden;
@@ -91,7 +91,7 @@
 .dor-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 72px; align-items: start; margin-top: 60px; }
 .section-copy { font-size: clamp(14px,1.5vw,16px); color: var(--silver); line-height: 1.85; max-width: 600px; margin-top: 16px; }
 .section-copy strong { color: white; font-weight: 700; }
-.pull-q { font-family: 'Geist', sans-serif; font-size: clamp(18px,2vw,24px); font-weight: 300; line-height: 1.5; color: var(--silver); border-left: 2px solid var(--surface2); padding: 16px 0 16px 24px; margin-top: 40px; }
+.pull-q { font-family: 'Space Grotesk', sans-serif; font-size: clamp(18px,2vw,24px); font-weight: 300; line-height: 1.5; color: var(--silver); border-left: 2px solid var(--surface2); padding: 16px 0 16px 24px; margin-top: 40px; }
 .pain-list { list-style: none; }
 .pain-item { display: flex; gap: 20px; align-items: flex-start; padding: 22px 0; border-bottom: 1px solid var(--line); transition: background .2s; }
 .pain-item:first-child { border-top: 1px solid var(--line); }
@@ -142,7 +142,7 @@
 .promise-body { font-size: 15px; line-height: 1.8; color: var(--silver); }
 .promise-body p + p { margin-top: 18px; }
 .promise-body strong { color: white; font-weight: 700; }
-.promise-em { color: var(--silver2); font-family: 'Geist', sans-serif; font-size: 15px; margin-top: 18px; display: block; }
+.promise-em { color: var(--silver2); font-family: 'Space Grotesk', sans-serif; font-size: 15px; margin-top: 18px; display: block; }
 .fi-stack { display: flex; flex-direction: column; gap: 8px; }
 .fi { display: flex; align-items: flex-start; gap: 16px; background: var(--surface); border: 1px solid var(--line); border-radius: var(--r-sm); padding: 18px 20px; transition: all .25s; cursor: default; }
 .fi:hover { background: var(--surface2); border-color: var(--line2); transform: translateX(4px); }
@@ -245,17 +245,14 @@
 
 /* ═══ CONTENT INDEX ═══ */
 .idx-sec { background: var(--bg2); border-top: 1px solid var(--line); }
-.method-map { display: grid; grid-template-columns: repeat(3,1fr); gap: 12px; margin: 40px 0; }
-.mm-cluster { background: var(--surface); border: 1px solid var(--line); border-radius: var(--r-md); padding: 20px 18px; transition: all .3s; cursor: default; position: relative; overflow: hidden; }
+.method-map { display: grid; grid-template-columns: repeat(2,1fr); gap: 12px; margin: 40px 0; }
+.mm-cluster { background: var(--surface); border: 1px solid var(--line); border-radius: var(--r-md); padding: 22px 20px; transition: all .3s; cursor: default; position: relative; overflow: hidden; }
 .mm-cluster::before { content: ''; position: absolute; inset: 0; background: radial-gradient(circle at 50% 0%,rgba(255,255,255,.04),transparent 70%); opacity: 0; transition: opacity .3s; }
 .mm-cluster:hover { border-color: var(--line2); transform: translateY(-4px); }
 .mm-cluster:hover::before { opacity: 1; }
-.mm-icon { font-size: 24px; margin-bottom: 10px; }
-.mm-cat { font-size: 11px; font-weight: 800; letter-spacing: .1em; text-transform: uppercase; color: var(--silver3); margin-bottom: 6px; }
-.mm-title { font-size: 14px; font-weight: 800; color: white; margin-bottom: 8px; }
-.mm-tags { display: flex; flex-wrap: wrap; gap: 4px; }
-.mm-tag { font-size: 10px; font-weight: 600; color: var(--silver2); background: var(--surface2); border-radius: 20px; padding: 3px 9px; }
-.mm-count { position: absolute; top: 14px; right: 14px; font-size: 10px; font-weight: 800; color: var(--silver3); }
+.mm-icon { font-size: 24px; margin-bottom: 10px; color: var(--silver2); }
+.mm-title { font-size: 14px; font-weight: 800; color: white; margin-bottom: 6px; text-transform: uppercase; letter-spacing: .04em; }
+.mm-desc { font-size: 12px; color: var(--silver); line-height: 1.6; font-weight: 400; }
 
 /* ═══ BONUS ═══ */
 .bonus-sec { background: var(--bg); }
@@ -309,7 +306,7 @@
 .price-now { font-size: 58px; font-weight: 900; color: white; line-height: 1; }
 .price-now sup { font-size: 22px; vertical-align: super; }
 .price-note { font-size: 10px; color: var(--silver3); margin-top: 4px; }
-.offer-btn { width: 100%; display: flex; align-items: center; justify-content: center; gap: 8px; background: white; color: var(--bg); font-family: 'Sora', sans-serif; font-size: 13px; font-weight: 800; letter-spacing: .05em; text-transform: uppercase; padding: 17px 24px; border: none; border-radius: 100px; cursor: pointer; text-decoration: none; margin-bottom: 14px; transition: all .25s; position: relative; overflow: hidden; }
+.offer-btn { width: 100%; display: flex; align-items: center; justify-content: center; gap: 8px; background: white; color: var(--bg); font-family: 'Inter', sans-serif; font-size: 13px; font-weight: 800; letter-spacing: .05em; text-transform: uppercase; padding: 17px 24px; border: none; border-radius: 100px; cursor: pointer; text-decoration: none; margin-bottom: 14px; transition: all .25s; position: relative; overflow: hidden; }
 .offer-btn:hover { transform: translateY(-2px); box-shadow: 0 12px 40px rgba(255,255,255,.2); }
 .offer-note { display: flex; align-items: center; justify-content: center; gap: 14px; flex-wrap: wrap; font-size: 11px; color: var(--silver3); }
 

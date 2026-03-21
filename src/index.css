@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Geist:wght@300;400;500;600;700;800;900&family=Sora:wght@300;400;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Space+Grotesk:wght@300;400;500;600;700&display=swap');
 
 @tailwind base;
 @tailwind components;
@@ -52,7 +52,7 @@ html { scroll-behavior: smooth; }
 body {
   background: var(--bg);
   color: white;
-  font-family: 'Sora', sans-serif;
+  font-family: 'Inter', sans-serif;
   -webkit-font-smoothing: antialiased;
   overflow-x: hidden;
 }
@@ -66,7 +66,7 @@ body::after {
 img { display: block; max-width: 100%; }
 a { text-decoration: none; color: inherit; }
 
-.serif { font-family: 'Geist', sans-serif; }
+.serif { font-family: 'Space Grotesk', sans-serif; }
 .dim { color: var(--silver2); }
 
 @keyframes fadeUp {

@@ -3,7 +3,8 @@ import {
   Smartphone, EyeOff, DollarSign, BarChart3, ClipboardList, Target,
   Zap, ShieldCheck, Gift, CreditCard, Download, Map, Rocket, TrendingUp,
   Globe, Wallet, GraduationCap, Clock, AlertTriangle, Users, Briefcase,
-  Bot, Sparkles, Lock, Check, ChevronRight
+  Bot, Sparkles, Lock, Check, ChevronRight, Search, Handshake, Monitor,
+  Landmark, TestTube, Play, Megaphone, ShoppingCart, Shirt, Star
 } from "lucide-react";
 
 /* ═══════════════════════════════════════════════════
@@ -375,19 +376,21 @@ export default function Index() {
           </div>
           <div className="method-map">
             {[
-              { ico: <Users size={24} />, cat: "Sem aparecer", title: "Afiliados & Comissão", count: "12 métodos", tags: ["Hotmart", "Kiwify", "Amazon", "+9"] },
-              { ico: <Smartphone size={24} />, cat: "Celular apenas", title: "Redes Sociais", count: "9 métodos", tags: ["Instagram", "TikTok", "Pinterest", "+6"] },
-              { ico: <Briefcase size={24} />, cat: "Serviços online", title: "Freelance Digital", count: "14 métodos", tags: ["Workana", "Fiverr", "99Freelas", "+11"] },
-              { ico: <Bot size={24} />, cat: "Tecnologia", title: "Inteligência Artificial", count: "8 métodos", tags: ["ChatGPT", "Midjourney", "ElevenLabs", "+5"] },
-              { ico: <GraduationCap size={24} />, cat: "Conhecimento", title: "Infoprodutos", count: "11 métodos", tags: ["Cursos", "Ebooks", "Templates", "+8"] },
-              { ico: <Sparkles size={24} />, cat: "E muito mais", title: "Dropshipping, Design, YouTube…", count: "27 métodos", tags: ["Copywriting", "Print-on-demand", "+20"] },
+              { ico: <Search size={24} />, title: "Pesquisas", desc: "Ganhe dinheiro respondendo pesquisas remuneradas online." },
+              { ico: <Handshake size={24} />, title: "Afiliados", desc: "Divulgue produtos e ganhe comissão por cada venda." },
+              { ico: <Briefcase size={24} />, title: "Freelancer", desc: "Ofereça seus serviços em plataformas de freelance." },
+              { ico: <Landmark size={24} />, title: "Bancos Digitais", desc: "Aproveite bônus, cashback e programas de indicação." },
+              { ico: <TestTube size={24} />, title: "Testando Produtos", desc: "Seja pago para testar e avaliar produtos e apps." },
+              { ico: <Play size={24} />, title: "Assistindo Anúncio", desc: "Assista vídeos e anúncios em troca de recompensas." },
+              { ico: <Megaphone size={24} />, title: "Marketing Digital", desc: "Preste serviços de marketing para pequenos negócios." },
+              { ico: <ShoppingCart size={24} />, title: "Revendendo Produtos", desc: "Compre no atacado e revenda com lucro pela internet." },
+              { ico: <Shirt size={24} />, title: "Revendendo Camisas", desc: "Crie e venda camisetas personalizadas sem estoque." },
+              { ico: <Star size={24} />, title: "Dica Bônus", desc: "Um método secreto que pode mudar seu jogo." },
             ].map((m) => (
               <div key={m.title} className="mm-cluster reveal">
-                <div className="mm-count">{m.count}</div>
                 <div className="mm-icon">{m.ico}</div>
-                <div className="mm-cat">{m.cat}</div>
                 <div className="mm-title">{m.title}</div>
-                <div className="mm-tags">{m.tags.map((t) => <span key={t} className="mm-tag">{t}</span>)}</div>
+                <div className="mm-desc">{m.desc}</div>
               </div>
             ))}
           </div>
