@@ -60,9 +60,9 @@
 .perk::before { content: '✓'; color: var(--silver2); font-weight: 800; }
 
 /* ── BOOK 3D ── */
-.book-stage { flex-shrink: 0; width: 220px; position: relative; opacity: 0; animation: bookIn .9s .35s cubic-bezier(.16,1,.3,1) forwards; }
+.book-stage { flex-shrink: 0; width: 260px; position: relative; opacity: 0; animation: bookIn .9s .35s cubic-bezier(.16,1,.3,1) forwards; }
 .book-3d {
-  width: 200px; height: 284px; border-radius: 4px 16px 16px 4px;
+  width: 240px; height: 340px; border-radius: 4px 16px 16px 4px;
   overflow: hidden; position: relative; transform-style: preserve-3d;
   transform: perspective(1000px) rotateY(-14deg) rotateX(3deg);
   transition: transform .5s cubic-bezier(.16,1,.3,1), box-shadow .5s ease;
@@ -72,6 +72,7 @@
   transform: perspective(1000px) rotateY(-5deg) rotateX(1deg) scale(1.05);
   box-shadow: -4px 4px 0 rgba(0,0,0,.4), -8px 8px 0 rgba(0,0,0,.2), 0 40px 100px rgba(0,0,0,.85), inset 0 0 0 1px rgba(255,255,255,.12);
 }
+.book-cover-img { width: 100%; height: 100%; object-fit: cover; display: block; position: relative; z-index: 1; }
 .book-spine { position: absolute; left: 0; top: 0; bottom: 0; width: 14px; background: linear-gradient(to right,rgba(0,0,0,.75),rgba(0,0,0,.05)); z-index: 2; }
 .book-gloss { position: absolute; inset: 0; z-index: 3; pointer-events: none; background: linear-gradient(135deg,rgba(255,255,255,.12) 0%,transparent 50%,rgba(255,255,255,.02) 100%); border-radius: inherit; }
 .book-glow { position: absolute; bottom: -16px; left: 30%; width: 140px; height: 20px; background: rgba(180,180,180,.2); filter: blur(16px); border-radius: 50%; }
