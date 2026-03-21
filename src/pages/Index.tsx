@@ -128,7 +128,7 @@ export default function Index() {
             Você acorda todo dia no mesmo ciclo: trabalha, paga conta, repete. <strong>81 métodos reais e testados</strong> para gerar renda na internet — para quem está cansado de chegar no fim do mês no vermelho.
           </p>
           <div className="hero-btns">
-            <a href="#oferta" className="btn btn-primary" onClick={addRipple}>Quero começar agora</a>
+            <a href="https://go.tribopay.com.br/w07cffe1vx" className="btn btn-primary" onClick={addRipple}>Quero começar agora</a>
             <a href="#conteudo" className="btn btn-ghost" onClick={addRipple}>Ver o conteúdo</a>
           </div>
           <div className="hero-perks">
@@ -471,10 +471,10 @@ export default function Index() {
                 <div className="sc-row"><div className="sc-dot" />Apenas 47 vagas restantes neste preço</div>
                 <div className="price-area">
                   <div className="price-was">De R$ 97,00</div>
-                  <div className="price-now serif"><sup>R$</sup>19<span style={{ fontSize: 28 }}>,90</span></div>
+                  <div className="price-now serif"><sup>R$</sup>39<span style={{ fontSize: 28 }}>,90</span></div>
                   <div className="price-note">Pagamento único · Acesso imediato · Sem mensalidade</div>
                 </div>
-                <a href="#" className="offer-btn" onClick={(e) => { addRipple(e); e.preventDefault(); }}>Garantir meu acesso agora →</a>
+                <a href="https://go.tribopay.com.br/w07cffe1vx" className="offer-btn" onClick={addRipple}>Garantir meu acesso agora →</a>
                 <div className="offer-note">
                   <span><Lock size={12} style={{ display: "inline", verticalAlign: "-2px" }} /> Seguro</span>
                   <span><Check size={12} style={{ display: "inline", verticalAlign: "-2px" }} /> PIX, cartão ou boleto</span>
@@ -512,11 +512,11 @@ export default function Index() {
           <span className="eyebrow" style={{ justifyContent: "center" }}>Última chance</span>
           <h2 className="d-lg serif" style={{ marginTop: 16 }}>Daqui a um ano,<br /><span className="dim">O QUE TERÁ MUDADO?</span></h2>
           <div className="copy-punch" style={{ maxWidth: 560, margin: "24px auto", fontSize: "clamp(16px,2vw,22px)" }}>
-            Daqui a 5 anos, você vai estar no mesmo lugar — ou em um lugar completamente diferente. A diferença é uma decisão de R$19,90 hoje.
+            Daqui a 5 anos, você vai estar no mesmo lugar — ou em um lugar completamente diferente. A diferença é uma decisão de R$39,90 hoje.
           </div>
           <p className="final-sub">Não existe momento perfeito. Existe o momento em que você decide que chega. Esse momento é agora.</p>
           <div className="final-btns">
-            <a href="#oferta" className="btn btn-primary" onClick={addRipple}>Garantir meu acesso agora</a>
+             <a href="https://go.tribopay.com.br/w07cffe1vx" className="btn btn-primary" onClick={addRipple}>Garantir meu acesso agora</a>
             <a href="#conteudo" className="btn btn-ghost" onClick={addRipple}>Ver o conteúdo primeiro</a>
           </div>
           <div className="final-note">
