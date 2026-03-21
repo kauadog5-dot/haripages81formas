@@ -516,7 +516,7 @@ export default function Index() {
           </div>
           <p className="final-sub">Não existe momento perfeito. Existe o momento em que você decide que chega. Esse momento é agora.</p>
           <div className="final-btns">
-            <a href="#oferta" className="btn btn-primary" onClick={addRipple}>Garantir meu acesso agora</a>
+             <a href="https://go.tribopay.com.br/w07cffe1vx" className="btn btn-primary" onClick={addRipple}>Garantir meu acesso agora</a>
             <a href="#conteudo" className="btn btn-ghost" onClick={addRipple}>Ver o conteúdo primeiro</a>
           </div>
           <div className="final-note">

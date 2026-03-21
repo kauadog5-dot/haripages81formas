@@ -72,7 +72,7 @@
   transform: perspective(1000px) rotateY(-5deg) rotateX(1deg) scale(1.05);
   box-shadow: -4px 4px 0 rgba(0,0,0,.4), -8px 8px 0 rgba(0,0,0,.2), 0 40px 100px rgba(0,0,0,.85), inset 0 0 0 1px rgba(255,255,255,.12);
 }
-.book-cover-img { width: 100%; height: 100%; object-fit: cover; display: block; position: relative; z-index: 1; }
+.book-cover-img { width: 100%; height: 100%; object-fit: contain; display: block; position: relative; z-index: 1; background: #0a0a0a; }
 .book-spine { position: absolute; left: 0; top: 0; bottom: 0; width: 14px; background: linear-gradient(to right,rgba(0,0,0,.75),rgba(0,0,0,.05)); z-index: 2; }
 .book-gloss { position: absolute; inset: 0; z-index: 3; pointer-events: none; background: linear-gradient(135deg,rgba(255,255,255,.12) 0%,transparent 50%,rgba(255,255,255,.02) 100%); border-radius: inherit; }
 .book-glow { position: absolute; bottom: -16px; left: 30%; width: 140px; height: 20px; background: rgba(180,180,180,.2); filter: blur(16px); border-radius: 50%; }
