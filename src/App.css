@@ -91,7 +91,7 @@
 .dor-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 72px; align-items: start; margin-top: 60px; }
 .section-copy { font-size: clamp(14px,1.5vw,16px); color: var(--silver); line-height: 1.85; max-width: 600px; margin-top: 16px; }
 .section-copy strong { color: white; font-weight: 700; }
-.pull-q { font-family: 'Geist', sans-serif; font-size: clamp(18px,2vw,24px); font-weight: 300; line-height: 1.5; color: var(--silver); border-left: 2px solid var(--surface2); padding: 16px 0 16px 24px; margin-top: 40px; }
+.pull-q { font-family: 'Space Grotesk', sans-serif; font-size: clamp(18px,2vw,24px); font-weight: 300; line-height: 1.5; color: var(--silver); border-left: 2px solid var(--surface2); padding: 16px 0 16px 24px; margin-top: 40px; }
 .pain-list { list-style: none; }
 .pain-item { display: flex; gap: 20px; align-items: flex-start; padding: 22px 0; border-bottom: 1px solid var(--line); transition: background .2s; }
 .pain-item:first-child { border-top: 1px solid var(--line); }
