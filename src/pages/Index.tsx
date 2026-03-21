@@ -3,7 +3,8 @@ import {
   Smartphone, EyeOff, DollarSign, BarChart3, ClipboardList, Target,
   Zap, ShieldCheck, Gift, CreditCard, Download, Map, Rocket, TrendingUp,
   Globe, Wallet, GraduationCap, Clock, AlertTriangle, Users, Briefcase,
-  Bot, Sparkles, Lock, Check, ChevronRight
+  Bot, Sparkles, Lock, Check, ChevronRight, Search, Handshake, Monitor,
+  Landmark, TestTube, Play, Megaphone, ShoppingCart, Shirt, Star
 } from "lucide-react";
 
 /* ═══════════════════════════════════════════════════
