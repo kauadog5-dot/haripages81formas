@@ -145,7 +145,7 @@
 .ben-card:hover { background: var(--surface2); border-color: var(--line2); transform: translateY(-6px); box-shadow: 0 24px 60px rgba(0,0,0,.5); }
 .ben-card:hover::after { opacity: 1; }
 .ben-ico { font-size: 24px; margin-bottom: 18px; }
-.ben-t { font-size: 20px; font-weight: 700; margin-bottom: 8px; }
+.ben-t { font-size: 18px; font-weight: 600; margin-bottom: 8px; }
 .ben-d { font-size: 12px; color: var(--silver2); line-height: 1.65; }
 
 /* ═══ TIMELINE ═══ */
