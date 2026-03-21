@@ -142,7 +142,7 @@
 .promise-body { font-size: 15px; line-height: 1.8; color: var(--silver); }
 .promise-body p + p { margin-top: 18px; }
 .promise-body strong { color: white; font-weight: 700; }
-.promise-em { color: var(--silver2); font-family: 'Geist', sans-serif; font-size: 15px; margin-top: 18px; display: block; }
+.promise-em { color: var(--silver2); font-family: 'Space Grotesk', sans-serif; font-size: 15px; margin-top: 18px; display: block; }
 .fi-stack { display: flex; flex-direction: column; gap: 8px; }
 .fi { display: flex; align-items: flex-start; gap: 16px; background: var(--surface); border: 1px solid var(--line); border-radius: var(--r-sm); padding: 18px 20px; transition: all .25s; cursor: default; }
 .fi:hover { background: var(--surface2); border-color: var(--line2); transform: translateX(4px); }
