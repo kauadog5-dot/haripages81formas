@@ -1,4 +1,10 @@
 import { useEffect, useRef, useState, useCallback } from "react";
+import {
+  Smartphone, EyeOff, DollarSign, BarChart3, ClipboardList, Target,
+  Zap, ShieldCheck, Gift, CreditCard, Download, Map, Rocket, TrendingUp,
+  Globe, Wallet, GraduationCap, Clock, AlertTriangle, Users, Briefcase,
+  Bot, Sparkles, Lock, Check, ChevronRight
+} from "lucide-react";
 
 /* ═══════════════════════════════════════════════════
    PRINTS – coloque aqui os nomes dos arquivos de /img
@@ -74,6 +80,21 @@ function FaqItem({ q, a }: { q: string; a: string }) {
   );
 }
 
+/* ── Mini progress bar component ── */
+function ProgressBar({ label, value, color = "white" }: { label: string; value: number; color?: string }) {
+  return (
+    <div className="mini-progress">
+      <div className="mp-header">
+        <span className="mp-label">{label}</span>
+        <span className="mp-value">{value}%</span>
+      </div>
+      <div className="mp-track">
+        <div className="mp-fill" style={{ width: `${value}%`, background: color }} />
+      </div>
+    </div>
+  );
+}
+
 /* ══════════════════════════════════════════════════════
    MAIN PAGE
    ══════════════════════════════════════════════════════ */
@@ -120,7 +141,7 @@ export default function Index() {
         <div className="book-stage">
           <div className="book-3d">
             <div className="book-spine" />
-            <img src="/img/ebook-capa.png" alt="Capa do Ebook 81 Formas" style={{ width: "100%", height: "100%", objectFit: "cover" }} />
+            <img src="/img/ebook-capa.png" alt="Capa do Ebook 81 Formas" className="book-cover-img" />
             <div className="book-gloss" />
           </div>
           <div className="book-glow" />
@@ -146,8 +167,8 @@ export default function Index() {
               <h2 className="d-lg serif" style={{ marginTop: 16 }}>Você não é<br /><span className="dim">PREGUIÇOSO.</span></h2>
               <p className="section-copy">Você trabalha duro. O problema é que <strong>ninguém te ensinou a ganhar dinheiro de verdade</strong> — só te ensinaram a trocar tempo por salário. E quando o salário acaba antes do mês, a culpa parece ser sua.</p>
               <div className="bubbles-row">
-                <div className="bubble red"><span className="bubble-emoji">😤</span>"Trabalho o dia todo e nunca sobra nada"</div>
-                <div className="bubble red"><span className="bubble-emoji">😰</span>"Todo mês é a mesma luta pra pagar as contas"</div>
+                <div className="bubble red"><span className="bubble-icon"><AlertTriangle size={20} /></span>"Trabalho o dia todo e nunca sobra nada"</div>
+                <div className="bubble red"><span className="bubble-icon"><TrendingUp size={20} /></span>"Todo mês é a mesma luta pra pagar as contas"</div>
               </div>
               <div className="pull-q serif">"Se esforço fosse suficiente, pedreiro seria milionário."</div>
             </div>
@@ -158,6 +179,15 @@ export default function Index() {
                 <li className="pain-item"><span className="pain-n">03</span><div><div className="pain-t">Informação demais, resultado zero</div><div className="pain-s">YouTube, Instagram, guru prometendo fortuna. Muita teoria, nenhum passo concreto.</div></div></li>
                 <li className="pain-item"><span className="pain-n">04</span><div><div className="pain-t">Medo de arriscar</div><div className="pain-s">Já caiu em golpe ou perdeu dinheiro tentando algo "fácil". Agora tem medo de qualquer oportunidade.</div></div></li>
               </ul>
+              {/* ── Visual break: mini chart ── */}
+              <div className="visual-break reveal">
+                <div className="vb-chart">
+                  <div className="vb-bar" style={{ height: "30%" }}><span>Salário</span></div>
+                  <div className="vb-bar accent" style={{ height: "85%" }}><span>Despesas</span></div>
+                  <div className="vb-bar dim-bar" style={{ height: "8%" }}><span>Sobra</span></div>
+                </div>
+                <p className="vb-caption">Realidade de 78% dos brasileiros</p>
+              </div>
               <div className="pain-copy-block">
                 <div className="big-q">E se existissem <span className="red-txt">81 caminhos reais</span> para sair dessa?</div>
                 <div className="sub-q">Não promessas vazias. Métodos testados, explicados passo a passo, que pessoas comuns já usam para gerar renda online todos os dias.</div>
@@ -179,12 +209,18 @@ export default function Index() {
               <p>Este não é mais um ebook motivacional. É um <strong>manual direto com 81 métodos práticos</strong> que qualquer pessoa pode começar — mesmo sem experiência, sem investimento, e sem aparecer.</p>
               <p>Cada método foi <strong>pesquisado, testado e organizado</strong> para que você encontre rapidamente o que funciona para o seu perfil.</p>
               <span className="promise-em serif">"Chega de scroll infinito procurando respostas. Está tudo aqui."</span>
+              {/* ── Visual break: progress bars ── */}
+              <div className="progress-group reveal" style={{ marginTop: 28 }}>
+                <ProgressBar label="Métodos sem investimento" value={62} color="var(--green)" />
+                <ProgressBar label="Métodos pelo celular" value={78} color="#4a9eff" />
+                <ProgressBar label="Sem aparecer / sem câmera" value={55} color="#c084fc" />
+              </div>
             </div>
             <div className="fi-stack reveal d2">
-              <div className="fi"><span className="fi-ico">📱</span><div><div className="fi-t">Funciona pelo celular</div><div className="fi-s">A maioria dos métodos precisa só de um smartphone e internet.</div></div></div>
-              <div className="fi"><span className="fi-ico">🚫</span><div><div className="fi-t">Sem aparecer</div><div className="fi-s">Métodos que não exigem mostrar o rosto, gravar vídeo ou ter seguidores.</div></div></div>
-              <div className="fi"><span className="fi-ico">💰</span><div><div className="fi-t">Sem investimento</div><div className="fi-s">Mais da metade dos métodos começam com zero reais.</div></div></div>
-              <div className="fi"><span className="fi-ico">📊</span><div><div className="fi-t">Passo a passo</div><div className="fi-s">Cada método é explicado com clareza, sem termos técnicos.</div></div></div>
+              <div className="fi"><span className="fi-ico"><Smartphone size={18} /></span><div><div className="fi-t">Funciona pelo celular</div><div className="fi-s">A maioria dos métodos precisa só de um smartphone e internet.</div></div></div>
+              <div className="fi"><span className="fi-ico"><EyeOff size={18} /></span><div><div className="fi-t">Sem aparecer</div><div className="fi-s">Métodos que não exigem mostrar o rosto, gravar vídeo ou ter seguidores.</div></div></div>
+              <div className="fi"><span className="fi-ico"><DollarSign size={18} /></span><div><div className="fi-t">Sem investimento</div><div className="fi-s">Mais da metade dos métodos começam com zero reais.</div></div></div>
+              <div className="fi"><span className="fi-ico"><BarChart3 size={18} /></span><div><div className="fi-t">Passo a passo</div><div className="fi-s">Cada método é explicado com clareza, sem termos técnicos.</div></div></div>
             </div>
           </div>
         </div>
@@ -204,7 +240,7 @@ export default function Index() {
                 <div key={t} className="ba-item"><span className="dot dot-red" />{t}</div>
               ))}
             </div>
-            <div className="ba-arrow">→</div>
+            <div className="ba-arrow"><ChevronRight size={28} /></div>
             <div className="ba-col after">
               <span className="ba-label">Depois</span>
               {["81 métodos na mão", "Plano claro de ação", "Confiança para agir", "Renda online crescendo"].map((t) => (
@@ -224,12 +260,12 @@ export default function Index() {
           </div>
           <div className="ben-grid">
             {[
-              { ico: "📋", t: "81 métodos reais", d: "Não é teoria. São formas verificadas de gerar renda na internet, com passo a passo." },
-              { ico: "🎯", t: "Para qualquer perfil", d: "Estudante, CLT, desempregado, aposentado. Há métodos para todos." },
-              { ico: "⚡", t: "Resultados rápidos", d: "71% dos leitores relatam primeiro resultado em menos de 30 dias." },
-              { ico: "🔒", t: "Garantia de 7 dias", d: "Não gostou? Devolvemos 100% do valor sem perguntas." },
-              { ico: "🎁", t: "3 bônus inclusos", d: "Lista de sites, prompts de IA e guia do zero — tudo grátis." },
-              { ico: "💳", t: "Preço acessível", d: "Menos do que um almoço. Pagamento único, sem mensalidade." },
+              { ico: <ClipboardList size={24} />, t: "81 métodos reais", d: "Não é teoria. São formas verificadas de gerar renda na internet, com passo a passo." },
+              { ico: <Target size={24} />, t: "Para qualquer perfil", d: "Estudante, CLT, desempregado, aposentado. Há métodos para todos." },
+              { ico: <Zap size={24} />, t: "Resultados rápidos", d: "71% dos leitores relatam primeiro resultado em menos de 30 dias." },
+              { ico: <ShieldCheck size={24} />, t: "Garantia de 7 dias", d: "Não gostou? Devolvemos 100% do valor sem perguntas." },
+              { ico: <Gift size={24} />, t: "3 bônus inclusos", d: "Lista de sites, prompts de IA e guia do zero — tudo grátis." },
+              { ico: <CreditCard size={24} />, t: "Preço acessível", d: "Menos do que um almoço. Pagamento único, sem mensalidade." },
             ].map((b) => (
               <div key={b.t} className="ben-card reveal">
                 <div className="ben-ico">{b.ico}</div>
@@ -250,11 +286,11 @@ export default function Index() {
           </div>
           <div className="timeline reveal d1">
             {[
-              { ico: "📥", step: "Agora", title: "VOCÊ GARANTE O ACESSO", desc: "Pagamento confirmado. Ebook + 3 bônus na sua caixa de entrada em minutos." },
-              { ico: "🗺️", step: "Dia 1", title: "VOCÊ ESCOLHE SEU MÉTODO", desc: "Lê o ebook, identifica os métodos que fazem sentido pro seu perfil." },
-              { ico: "🚀", step: "Dia 2 a 7", title: "VOCÊ COMEÇA A AGIR", desc: "Segue o Guia de 7 Dias incluso. Dá os primeiros passos com clareza." },
-              { ico: "💰", step: "Semana 2 a 4", title: "OS PRIMEIROS RESULTADOS APARECEM", desc: "71% dos leitores relatam o primeiro resultado dentro de 30 dias." },
-              { ico: "🌍", step: "Mês 2 em diante", title: "VOCÊ CONSTRÓI SUA RENDA", desc: "Escala o que está funcionando. Sua renda online começa a crescer." },
+              { ico: <Download size={14} />, step: "Agora", title: "VOCÊ GARANTE O ACESSO", desc: "Pagamento confirmado. Ebook + 3 bônus na sua caixa de entrada em minutos." },
+              { ico: <Map size={14} />, step: "Dia 1", title: "VOCÊ ESCOLHE SEU MÉTODO", desc: "Lê o ebook, identifica os métodos que fazem sentido pro seu perfil." },
+              { ico: <Rocket size={14} />, step: "Dia 2 a 7", title: "VOCÊ COMEÇA A AGIR", desc: "Segue o Guia de 7 Dias incluso. Dá os primeiros passos com clareza." },
+              { ico: <DollarSign size={14} />, step: "Semana 2 a 4", title: "OS PRIMEIROS RESULTADOS APARECEM", desc: "71% dos leitores relatam o primeiro resultado dentro de 30 dias." },
+              { ico: <Globe size={14} />, step: "Mês 2 em diante", title: "VOCÊ CONSTRÓI SUA RENDA", desc: "Escala o que está funcionando. Sua renda online começa a crescer." },
             ].map((t) => (
               <div key={t.step} className="tl-item">
                 <div className="tl-dot">{t.ico}</div>
@@ -282,15 +318,15 @@ export default function Index() {
                   <div className="ct-hcell">Com o ebook</div>
                 </div>
                 {[
-                  { sit: "💸 Sem dinheiro", sem: "❌ Parado", com: "✓ 50+ métodos grátis" },
-                  { sit: "🎓 Sem experiência", sem: "❌ Perdido", com: "✓ Guia do zero" },
-                  { sit: "⏰ Pouco tempo", sem: "❌ Adiando", com: "✓ Métodos de 30min/dia" },
-                  { sit: "😰 Tentou antes", sem: "❌ Com medo", com: "✓ 81 opções + garantia" },
+                  { ico: <Wallet size={14} />, sit: "Sem dinheiro", sem: "Parado", com: "50+ métodos grátis" },
+                  { ico: <GraduationCap size={14} />, sit: "Sem experiência", sem: "Perdido", com: "Guia do zero" },
+                  { ico: <Clock size={14} />, sit: "Pouco tempo", sem: "Adiando", com: "Métodos de 30min/dia" },
+                  { ico: <AlertTriangle size={14} />, sit: "Tentou antes", sem: "Com medo", com: "81 opções + garantia" },
                 ].map((r) => (
                   <div key={r.sit} className="ct-row">
-                    <div className="ct-cell">{r.sit}</div>
-                    <div className="ct-cell"><span className="ci">{r.sem.slice(0, 1)}</span> {r.sem.slice(2)}</div>
-                    <div className="ct-cell highlight"><span className="ci">{r.com.slice(0, 1)}</span> {r.com.slice(2)}</div>
+                    <div className="ct-cell"><span className="ct-ico">{r.ico}</span> {r.sit}</div>
+                    <div className="ct-cell"><span className="ci">✗</span> {r.sem}</div>
+                    <div className="ct-cell highlight"><span className="ci"><Check size={14} /></span> {r.com}</div>
                   </div>
                 ))}
               </div>
@@ -313,7 +349,6 @@ export default function Index() {
             <span className="eyebrow">Resultados reais</span>
             <h2 className="d-lg serif" style={{ marginTop: 16 }}>Quem já<br /><span className="dim">MUDOU DE VIDA.</span></h2>
           </div>
-          {/* ── Grid de 6 prints retangulares (3 de cada lado) ── */}
           <div className="prints-grid reveal d1">
             {PRINTS.map((src, i) => (
               <div key={i} className="print-card">
@@ -340,12 +375,12 @@ export default function Index() {
           </div>
           <div className="method-map">
             {[
-              { ico: "🤝", cat: "Sem aparecer", title: "Afiliados & Comissão", count: "12 métodos", tags: ["Hotmart", "Kiwify", "Amazon", "+9"] },
-              { ico: "📱", cat: "Celular apenas", title: "Redes Sociais", count: "9 métodos", tags: ["Instagram", "TikTok", "Pinterest", "+6"] },
-              { ico: "💼", cat: "Serviços online", title: "Freelance Digital", count: "14 métodos", tags: ["Workana", "Fiverr", "99Freelas", "+11"] },
-              { ico: "🤖", cat: "Tecnologia", title: "Inteligência Artificial", count: "8 métodos", tags: ["ChatGPT", "Midjourney", "ElevenLabs", "+5"] },
-              { ico: "🎓", cat: "Conhecimento", title: "Infoprodutos", count: "11 métodos", tags: ["Cursos", "Ebooks", "Templates", "+8"] },
-              { ico: "✨", cat: "E muito mais", title: "Dropshipping, Design, YouTube…", count: "27 métodos", tags: ["Copywriting", "Print-on-demand", "+20"] },
+              { ico: <Users size={24} />, cat: "Sem aparecer", title: "Afiliados & Comissão", count: "12 métodos", tags: ["Hotmart", "Kiwify", "Amazon", "+9"] },
+              { ico: <Smartphone size={24} />, cat: "Celular apenas", title: "Redes Sociais", count: "9 métodos", tags: ["Instagram", "TikTok", "Pinterest", "+6"] },
+              { ico: <Briefcase size={24} />, cat: "Serviços online", title: "Freelance Digital", count: "14 métodos", tags: ["Workana", "Fiverr", "99Freelas", "+11"] },
+              { ico: <Bot size={24} />, cat: "Tecnologia", title: "Inteligência Artificial", count: "8 métodos", tags: ["ChatGPT", "Midjourney", "ElevenLabs", "+5"] },
+              { ico: <GraduationCap size={24} />, cat: "Conhecimento", title: "Infoprodutos", count: "11 métodos", tags: ["Cursos", "Ebooks", "Templates", "+8"] },
+              { ico: <Sparkles size={24} />, cat: "E muito mais", title: "Dropshipping, Design, YouTube…", count: "27 métodos", tags: ["Copywriting", "Print-on-demand", "+20"] },
             ].map((m) => (
               <div key={m.title} className="mm-cluster reveal">
                 <div className="mm-count">{m.count}</div>
@@ -392,7 +427,7 @@ export default function Index() {
           <div className="reveal"><span className="eyebrow">Proteção total</span></div>
           <div className="guar-card reveal d1">
             <div className="guar-seal">
-              <div className="seal-ico">🛡️</div>
+              <div className="seal-ico"><ShieldCheck size={22} /></div>
               <div className="seal-n serif">7</div>
               <div className="seal-l">dias garantia</div>
             </div>
@@ -420,7 +455,7 @@ export default function Index() {
               <div className="oc-body">
                 <div className="inc-list">
                   {["Ebook completo — 81 Formas (PDF)", "Bônus 1 — Lista de 50 Sites", "Bônus 2 — 30 Prompts de IA", "Bônus 3 — Guia do Zero em 7 Dias", "Acesso imediato após pagamento", "Garantia de 7 dias sem risco"].map((t) => (
-                    <div key={t} className="inc-row"><span className="inc-chk">✓</span><span>{t}</span></div>
+                    <div key={t} className="inc-row"><span className="inc-chk"><Check size={14} /></span><span>{t}</span></div>
                   ))}
                 </div>
                 <div className="cd-box">
@@ -441,9 +476,9 @@ export default function Index() {
                 </div>
                 <a href="#" className="offer-btn" onClick={(e) => { addRipple(e); e.preventDefault(); }}>Garantir meu acesso agora →</a>
                 <div className="offer-note">
-                  <span>🔒 Seguro</span>
-                  <span>✓ PIX, cartão ou boleto</span>
-                  <span>🛡️ 7 dias garantia</span>
+                  <span><Lock size={12} style={{ display: "inline", verticalAlign: "-2px" }} /> Seguro</span>
+                  <span><Check size={12} style={{ display: "inline", verticalAlign: "-2px" }} /> PIX, cartão ou boleto</span>
+                  <span><ShieldCheck size={12} style={{ display: "inline", verticalAlign: "-2px" }} /> 7 dias garantia</span>
                 </div>
               </div>
             </div>
@@ -485,9 +520,9 @@ export default function Index() {
             <a href="#conteudo" className="btn btn-ghost" onClick={addRipple}>Ver o conteúdo primeiro</a>
           </div>
           <div className="final-note">
-            <span>✓ Acesso imediato</span>
-            <span>✓ Garantia de 7 dias</span>
-            <span>✓ Pagamento seguro</span>
+            <span><Check size={12} style={{ display: "inline", verticalAlign: "-2px" }} /> Acesso imediato</span>
+            <span><Check size={12} style={{ display: "inline", verticalAlign: "-2px" }} /> Garantia de 7 dias</span>
+            <span><Check size={12} style={{ display: "inline", verticalAlign: "-2px" }} /> Pagamento seguro</span>
           </div>
         </div>
       </section>
