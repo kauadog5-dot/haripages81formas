@@ -52,7 +52,7 @@ html { scroll-behavior: smooth; }
 body {
   background: var(--bg);
   color: white;
-  font-family: 'Sora', sans-serif;
+  font-family: 'Inter', sans-serif;
   -webkit-font-smoothing: antialiased;
   overflow-x: hidden;
 }
