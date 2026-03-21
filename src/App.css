@@ -108,8 +108,33 @@
 .bubble { position: relative; background: var(--surface2); border: 1px solid var(--line2); border-radius: 20px 20px 20px 4px; padding: 16px 20px; font-size: 13px; font-weight: 600; color: var(--silver); line-height: 1.5; flex: 1; min-width: 180px; transition: all .3s; }
 .bubble::after { content: ''; position: absolute; bottom: -10px; left: 16px; width: 10px; height: 10px; background: var(--surface2); border-right: 1px solid var(--line2); border-bottom: 1px solid var(--line2); clip-path: polygon(0 0, 100% 0, 100% 100%); }
 .bubble:hover { border-color: white; color: white; transform: translateY(-3px); }
-.bubble-emoji { font-size: 20px; margin-bottom: 8px; display: block; }
+.bubble-icon { display: flex; align-items: center; margin-bottom: 8px; color: var(--silver2); }
 .bubble.red { border-color: rgba(224,90,90,.35); }
+.bubble.red .bubble-icon { color: #E05A5A; }
+
+/* ── Visual break: mini bar chart ── */
+.visual-break { margin: 32px 0; }
+.vb-chart { display: flex; align-items: flex-end; gap: 12px; height: 120px; padding: 0 8px; }
+.vb-bar { flex: 1; background: var(--surface2); border-radius: 6px 6px 0 0; display: flex; align-items: flex-end; justify-content: center; padding-bottom: 8px; transition: all .4s ease; min-height: 16px; border: 1px solid var(--line); border-bottom: none; }
+.vb-bar span { font-size: 9px; font-weight: 700; letter-spacing: .08em; text-transform: uppercase; color: var(--silver2); }
+.vb-bar.accent { background: rgba(224,90,90,.25); border-color: rgba(224,90,90,.4); }
+.vb-bar.accent span { color: #E05A5A; }
+.vb-bar.dim-bar { background: rgba(76,175,135,.15); border-color: rgba(76,175,135,.3); }
+.vb-bar.dim-bar span { color: var(--green); }
+.vb-caption { font-size: 10px; color: var(--silver3); text-align: center; margin-top: 10px; font-weight: 600; letter-spacing: .06em; }
+
+/* ── Progress bars ── */
+.progress-group { display: flex; flex-direction: column; gap: 14px; }
+.mini-progress {}
+.mp-header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 6px; }
+.mp-label { font-size: 11px; font-weight: 600; color: var(--silver); }
+.mp-value { font-size: 11px; font-weight: 800; color: white; }
+.mp-track { width: 100%; height: 6px; background: var(--surface2); border-radius: 3px; overflow: hidden; }
+.mp-fill { height: 100%; border-radius: 3px; transition: width 1.2s cubic-bezier(.16,1,.3,1); }
+
+/* ── Icon styling in fi-ico ── */
+.fi-ico { display: flex; align-items: center; justify-content: center; color: var(--silver); }
+.ct-ico { display: inline-flex; vertical-align: middle; color: var(--silver2); margin-right: 4px; }
 
 /* ═══ PROMISE ═══ */
 .promise-sec { background: var(--bg2); border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); position: relative; }
