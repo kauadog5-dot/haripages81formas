@@ -18,7 +18,7 @@
 /* ─── BUTTONS ─── */
 .btn {
   display: inline-flex; align-items: center; justify-content: center; gap: 8px;
-  font-family: 'Sora', sans-serif; font-weight: 800; font-size: 13px;
+  font-family: 'Inter', sans-serif; font-weight: 800; font-size: 13px;
   letter-spacing: .04em; border: none; cursor: pointer;
   border-radius: 100px; padding: 14px 30px;
   position: relative; overflow: hidden;
