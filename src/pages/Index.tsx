@@ -512,7 +512,7 @@ export default function Index() {
           <span className="eyebrow" style={{ justifyContent: "center" }}>Última chance</span>
           <h2 className="d-lg serif" style={{ marginTop: 16 }}>Daqui a um ano,<br /><span className="dim">O QUE TERÁ MUDADO?</span></h2>
           <div className="copy-punch" style={{ maxWidth: 560, margin: "24px auto", fontSize: "clamp(16px,2vw,22px)" }}>
-            Daqui a 5 anos, você vai estar no mesmo lugar — ou em um lugar completamente diferente. A diferença é uma decisão de R$19,90 hoje.
+            Daqui a 5 anos, você vai estar no mesmo lugar — ou em um lugar completamente diferente. A diferença é uma decisão de R$39,90 hoje.
           </div>
           <p className="final-sub">Não existe momento perfeito. Existe o momento em que você decide que chega. Esse momento é agora.</p>
           <div className="final-btns">
