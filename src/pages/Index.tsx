@@ -471,10 +471,10 @@ export default function Index() {
                 <div className="sc-row"><div className="sc-dot" />Apenas 47 vagas restantes neste preço</div>
                 <div className="price-area">
                   <div className="price-was">De R$ 97,00</div>
-                  <div className="price-now serif"><sup>R$</sup>19<span style={{ fontSize: 28 }}>,90</span></div>
+                  <div className="price-now serif"><sup>R$</sup>39<span style={{ fontSize: 28 }}>,90</span></div>
                   <div className="price-note">Pagamento único · Acesso imediato · Sem mensalidade</div>
                 </div>
-                <a href="#" className="offer-btn" onClick={(e) => { addRipple(e); e.preventDefault(); }}>Garantir meu acesso agora →</a>
+                <a href="https://go.tribopay.com.br/w07cffe1vx" className="offer-btn" onClick={addRipple}>Garantir meu acesso agora →</a>
                 <div className="offer-note">
                   <span><Lock size={12} style={{ display: "inline", verticalAlign: "-2px" }} /> Seguro</span>
                   <span><Check size={12} style={{ display: "inline", verticalAlign: "-2px" }} /> PIX, cartão ou boleto</span>
