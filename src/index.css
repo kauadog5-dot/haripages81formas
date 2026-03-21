@@ -66,7 +66,7 @@ body::after {
 img { display: block; max-width: 100%; }
 a { text-decoration: none; color: inherit; }
 
-.serif { font-family: 'Geist', sans-serif; }
+.serif { font-family: 'Space Grotesk', sans-serif; }
 .dim { color: var(--silver2); }
 
 @keyframes fadeUp {

@@ -309,7 +309,7 @@
 .price-now { font-size: 58px; font-weight: 900; color: white; line-height: 1; }
 .price-now sup { font-size: 22px; vertical-align: super; }
 .price-note { font-size: 10px; color: var(--silver3); margin-top: 4px; }
-.offer-btn { width: 100%; display: flex; align-items: center; justify-content: center; gap: 8px; background: white; color: var(--bg); font-family: 'Sora', sans-serif; font-size: 13px; font-weight: 800; letter-spacing: .05em; text-transform: uppercase; padding: 17px 24px; border: none; border-radius: 100px; cursor: pointer; text-decoration: none; margin-bottom: 14px; transition: all .25s; position: relative; overflow: hidden; }
+.offer-btn { width: 100%; display: flex; align-items: center; justify-content: center; gap: 8px; background: white; color: var(--bg); font-family: 'Inter', sans-serif; font-size: 13px; font-weight: 800; letter-spacing: .05em; text-transform: uppercase; padding: 17px 24px; border: none; border-radius: 100px; cursor: pointer; text-decoration: none; margin-bottom: 14px; transition: all .25s; position: relative; overflow: hidden; }
 .offer-btn:hover { transform: translateY(-2px); box-shadow: 0 12px 40px rgba(255,255,255,.2); }
 .offer-note { display: flex; align-items: center; justify-content: center; gap: 14px; flex-wrap: wrap; font-size: 11px; color: var(--silver3); }
 
