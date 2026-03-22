@@ -213,18 +213,26 @@
 .acc-inner { padding: 0 0 20px; font-size: 13px; color: var(--silver); line-height: 1.8; }
 .acc-item.open .acc-body { max-height: 200px; }
 
-/* ═══ PRINTS GRID (6 retangulares, 3 de cada lado) ═══ */
-.prints-grid {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 20px;
-  margin-top: 56px;
+/* ═══ PRINTS – carrossel horizontal ═══ */
+.prints-scroll {
+  display: flex;
+  gap: 16px;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  -webkit-overflow-scrolling: touch;
+  padding: 16px 0 24px;
+  margin-top: 40px;
+  scrollbar-width: none;
 }
+.prints-scroll::-webkit-scrollbar { display: none; }
 .print-card {
+  flex: 0 0 280px;
+  max-width: 320px;
   background: var(--surface);
   border: 1px solid var(--line);
   border-radius: var(--r-md);
   overflow: hidden;
+  scroll-snap-align: center;
   transition: all .3s cubic-bezier(.16,1,.3,1);
   cursor: default;
 }
@@ -347,7 +355,6 @@ footer { background: var(--bg2); border-top: 1px solid var(--line); padding: 32p
   .book-3d{width:190px;height:270px;}
   .dor-grid,.promise-cols,.offer-layout,.obj-layout{grid-template-columns:1fr;gap:48px;}
   .ben-grid{grid-template-columns:repeat(2,1fr);}
-  .prints-grid{grid-template-columns:repeat(2,1fr);}
   .method-map{grid-template-columns:repeat(2,1fr);}
   .bonus-row{grid-template-columns:1fr;gap:8px;}
   .bonus-n{display:none;}
@@ -366,7 +373,7 @@ footer { background: var(--bg2); border-top: 1px solid var(--line); padding: 32p
   .sec{padding:80px 0!important;}
   .hero{padding:72px 20px 60px;}
   .ben-grid{grid-template-columns:1fr;}
-  .prints-grid{grid-template-columns:repeat(2,1fr);}
+  
   .d-xl{font-size:38px;}
   .d-lg{font-size:30px;}
   .final-btns{flex-direction:column;align-items:stretch;}

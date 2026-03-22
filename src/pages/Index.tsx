@@ -350,7 +350,7 @@ export default function Index() {
             <span className="eyebrow">Resultados reais</span>
             <h2 className="d-lg serif" style={{ marginTop: 16 }}>Quem já<br /><span className="dim">MUDOU DE VIDA.</span></h2>
           </div>
-          <div className="prints-grid reveal d1">
+          <div className="prints-scroll reveal d1">
             {PRINTS.map((src, i) => (
               <div key={i} className="print-card">
                 <img
