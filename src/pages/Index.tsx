@@ -119,7 +119,7 @@ export default function Index() {
       {/* ════ HERO ════ */}
       <section className="hero">
         <div className="hero-content">
-          <div className="hero-eyebrow eyebrow">Ebook Digital · 2024</div>
+          <div className="hero-eyebrow eyebrow">Ebook Digital · 2026</div>
           <h1 className="d-xl serif hero-title">
             Pare de<br />
             <span className="dim">SOBREVIVER.</span><br />

@@ -217,7 +217,7 @@
 .prints-grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: 16px;
+  gap: 20px;
   margin-top: 56px;
 }
 .print-card {
@@ -225,7 +225,6 @@
   border: 1px solid var(--line);
   border-radius: var(--r-md);
   overflow: hidden;
-  aspect-ratio: 16 / 9;
   transition: all .3s cubic-bezier(.16,1,.3,1);
   cursor: default;
 }
@@ -236,8 +235,9 @@
 }
 .print-img {
   width: 100%;
-  height: 100%;
-  object-fit: cover;
+  height: auto;
+  display: block;
+  object-fit: contain;
 }
 
 /* ═══ PROOF ═══ */
