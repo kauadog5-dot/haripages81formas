@@ -353,14 +353,16 @@ export default function Index() {
           <div className="prints-scroll reveal d1">
             {PRINTS.map((src, i) => (
               <div key={i} className="print-card">
-                <img
-                  src={src}
-                  alt={`Print de resultado ${i + 1}`}
-                  className="print-img"
-                  onError={(e) => {
-                    (e.target as HTMLImageElement).src = "/placeholder.svg";
-                  }}
-                />
+                <div className="print-media">
+                  <img
+                    src={src}
+                    alt={`Print de resultado ${i + 1}`}
+                    className="print-img"
+                    onError={(e) => {
+                      (e.target as HTMLImageElement).src = "/placeholder.svg";
+                    }}
+                  />
+                </div>
               </div>
             ))}
           </div>
