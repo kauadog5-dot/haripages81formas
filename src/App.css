@@ -355,7 +355,6 @@ footer { background: var(--bg2); border-top: 1px solid var(--line); padding: 32p
   .book-3d{width:190px;height:270px;}
   .dor-grid,.promise-cols,.offer-layout,.obj-layout{grid-template-columns:1fr;gap:48px;}
   .ben-grid{grid-template-columns:repeat(2,1fr);}
-  .prints-grid{grid-template-columns:repeat(2,1fr);}
   .method-map{grid-template-columns:repeat(2,1fr);}
   .bonus-row{grid-template-columns:1fr;gap:8px;}
   .bonus-n{display:none;}
